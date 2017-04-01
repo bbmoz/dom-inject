@@ -1,8 +1,8 @@
 {
-  "name": "dom-inject",
+  "name": "inject-decorator",
   "version": "0.0.1",
   "description": "Create decorators that can inject anything into your JS modules!",
-  "main": "dist/@dom.js",
+  "main": "dist/inject-decorator.js",
   "files": [
     "dist/",
     "src/",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bbmoz/dom-inject.git"
+    "url": "https://github.com/bbmoz/inject-decorator.git"
   },
   "keywords": [
     "es6",
@@ -35,9 +35,9 @@
   "author": "Joe Lee <https://github.com/bbmoz>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bbmoz/dom-inject/issues"
+    "url": "https://github.com/bbmoz/inject-decorator/issues"
   },
-  "homepage": "https://github.com/bbmoz/dom-inject",
+  "homepage": "https://github.com/bbmoz/inject-decorator",
   "devDependencies": {
     "ava": "^0.18.2",
     "babel-core": "^6.24.0",

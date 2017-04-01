@@ -1,6 +1,6 @@
-# Inject
+# Inject Decorator
 
-[![Build Status](https://travis-ci.org/bbmoz/dom-inject.svg)](https://travis-ci.org/bbmoz/dom-inject)
+[![Build Status](https://travis-ci.org/bbmoz/inject-decorator.svg)](https://travis-ci.org/bbmoz/inject-decorator)
 
 > Create decorators that can inject anything into your JS modules!
 
@@ -10,7 +10,7 @@ Define an object that represents some dom elements, call the library with it, an
 
 ```javascript
 // part 1
-import inject from 'inject'
+import inject from 'inject-decorator'
 
 const domElements = {
   heading: document.getElementById('heading'),

@@ -1,5 +1,5 @@
 import test from 'ava'
-import inject from './../dist/inject'
+import inject from './../dist/inject-decorator'
 
 let injector
 let target
