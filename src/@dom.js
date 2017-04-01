@@ -1,17 +1,19 @@
-function dom (...$elements) {
-  if ($elements.length === 1 && typeof $elements[0] !== 'string') {
-    const target = $elements[0]
-    target.$$dom = this.$$
-    return
-  }
+function dom (domElements) {
+  return function (...$elements) {
+    if ($elements.length === 1 && typeof $elements[0] === 'function') {
+      const target = $elements[0]
+      target.$ = domElements
+      return
+    }
 
-  return function (target) {
-    const $$ = {}
-    $elements.forEach($element => {
-      $$[$element] = this.$$[$element]
-    })
-    target.$$dom = $$
+    return function (target) {
+      const filteredDomElements = {}
+      $elements.forEach($element => {
+        filteredDomElements[$element] = domElements[$element]
+      })
+      target.$ = filteredDomElements
+    }
   }
 }
 
-export default dom
+module.exports = dom

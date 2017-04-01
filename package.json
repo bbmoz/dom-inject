@@ -13,7 +13,7 @@
   "scripts": {
     "prebuild": "rm -rf dist/",
     "build": "babili src/ -d dist/",
-    "pretest": "eslint src/",
+    "pretest": "eslint src/ && npm run build",
     "test": "ava"
   },
   "repository": {
@@ -51,20 +51,27 @@
     "eslint-config-standard": "^7.1.0",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^2.1.1",
+    "html-webpack-plugin": "^2.28.0",
+    "nodemon": "^1.11.0",
     "webpack": "^2.3.2"
   },
   "ava": {
     "files": [
-      "test/**/*.js"
+      "test/@dom.js"
     ],
     "source": [
-      "src/**/*.js"
+      "dist/@dom.js"
     ],
     "failWithoutAssertions": true,
     "powerAssert": true,
     "require": [
       "babel-register"
     ],
-    "babel": "inherit"
+    "babel": {
+      "presets": [
+        "env",
+        "latest"
+      ]
+    }
   }
 }

@@ -1,7 +1,8 @@
-import dom from 'dom-inject'
+import dom from './../../dist/@dom'
 
-dom.$$ = {
-  $heading: document.getElementById('heading')
+const domElements = {
+  heading: document.getElementById('heading'),
+  footer: document.querySelector('footer')
 }
 
-export default dom
+export default dom(domElements)
