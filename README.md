@@ -38,4 +38,4 @@ class Hello {
 }
 ```
 
-To inject more elements than just `heading`, simply comma delimit i.e. `@dom('heading', 'footer')`. Or if you want access to all elements, simply use `@dom` without any arguments. See `example/`.
+To inject more elements than just `heading`, simply comma delimit i.e. `@dom('heading', 'footer')`. Or if you want access to all elements, simply use `@dom` without any arguments.
