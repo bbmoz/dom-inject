@@ -1,31 +1,52 @@
 {
   "name": "dom-inject",
   "version": "0.0.1",
-  "description": "",
-  "main": "",
+  "description": "Inject dom elements into your classes with the @dom decorator.",
+  "main": "dist/@dom.js",
+  "files": [
+    "dist/",
+    "src/",
+    "example/",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
+    "prebuild": "rm -rf dist/",
+    "build": "babili src/ -d dist/",
     "pretest": "eslint src/",
-    "test": "ava",
-    "build": "rm -rf dist/ && webpack -p --bail --progress"
+    "test": "ava"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bbmoz/dom-inject.git"
+    "url": "https://github.com/bbmoz/dom-inject.git"
   },
+  "keywords": [
+    "es6",
+    "es7",
+    "es2015",
+    "es2016",
+    "babel",
+    "decorators",
+    "annotations",
+    "dom",
+    "inject"
+  ],
   "author": "Joe Lee <https://github.com/bbmoz>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bbmoz/dom-inject/issues"
   },
-  "homepage": "https://github.com/bbmoz/dom-inject#readme",
+  "homepage": "https://github.com/bbmoz/dom-inject",
   "devDependencies": {
     "ava": "^0.18.2",
     "babel-core": "^6.24.0",
     "babel-loader": "^6.4.1",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-babili": "0.0.12",
     "babel-preset-env": "^1.3.2",
     "babel-preset-latest": "^6.24.0",
+    "babili": "0.0.12",
     "eslint": "^3.19.0",
     "eslint-config-standard": "^7.1.0",
     "eslint-plugin-promise": "^3.5.0",
