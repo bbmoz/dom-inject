@@ -1,6 +1,4 @@
-# Inject Decorator
-
-[![Build Status](https://travis-ci.org/bbmoz/inject-decorator.svg)](https://travis-ci.org/bbmoz/inject-decorator)
+# Inject Decorator [![npm version](https://badge.fury.io/js/inject-decorator.svg)](https://badge.fury.io/js/inject-decorator) [![Build Status](https://travis-ci.org/bbmoz/inject-decorator.svg)](https://travis-ci.org/bbmoz/inject-decorator)
 
 > Create decorators that can inject anything into your JS modules!
 
@@ -38,4 +36,4 @@ class Hello {
 }
 ```
 
-To inject more elements than just `heading`, simply comma delimit i.e. `@dom('heading', 'footer')`. Or if you want access to all elements, simply use `@dom` without any arguments.
+To inject more elements than just `heading`, simply comma delimit i.e. `@dom('heading', 'footer')`. Or if you want access to all elements, use `@dom` without any arguments.
