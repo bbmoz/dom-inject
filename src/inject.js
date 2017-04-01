@@ -1,19 +1,19 @@
-function dom (domElements) {
+function inject (elements) {
   return function (...$elements) {
     if ($elements.length === 1 && typeof $elements[0] === 'function') {
       const target = $elements[0]
-      target.$ = domElements
+      target.$ = elements
       return
     }
 
     return function (target) {
-      const filteredDomElements = {}
+      const filteredElements = {}
       $elements.forEach($element => {
-        filteredDomElements[$element] = domElements[$element]
+        filteredElements[$element] = elements[$element]
       })
-      target.$ = filteredDomElements
+      target.$ = filteredElements
     }
   }
 }
 
-module.exports = dom
+module.exports = inject

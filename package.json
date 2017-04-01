@@ -1,7 +1,7 @@
 {
   "name": "dom-inject",
   "version": "0.0.1",
-  "description": "Inject dom elements into your classes with the @dom decorator.",
+  "description": "Create decorators that can inject anything into your JS modules!",
   "main": "dist/@dom.js",
   "files": [
     "dist/",
@@ -14,7 +14,8 @@
     "prebuild": "rm -rf dist/",
     "build": "babili src/ -d dist/",
     "pretest": "eslint src/ && npm run build",
-    "test": "ava"
+    "test": "ava",
+    "example": "cd example/ && webpack && http-server dist/"
   },
   "repository": {
     "type": "git",
@@ -57,10 +58,10 @@
   },
   "ava": {
     "files": [
-      "test/@dom.js"
+      "test/**/*.js"
     ],
     "source": [
-      "dist/@dom.js"
+      "dist/**/*.js"
     ],
     "failWithoutAssertions": true,
     "powerAssert": true,

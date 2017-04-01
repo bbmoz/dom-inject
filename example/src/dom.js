@@ -1,8 +1,8 @@
-import dom from './../../dist/@dom'
+import inject from './../../dist/inject'
 
 const domElements = {
   heading: document.getElementById('heading'),
   footer: document.querySelector('footer')
 }
 
-export default dom(domElements)
+export default inject(domElements)

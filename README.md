@@ -1,23 +1,23 @@
-# Dom Inject
+# Inject
 
 [![Build Status](https://travis-ci.org/bbmoz/dom-inject.svg)](https://travis-ci.org/bbmoz/dom-inject)
 
-> Decorator to inject dom elements into your JS modules.
+> Create decorators that can inject anything into your JS modules!
 
-## Use
+## Example using DOM elements
 
-You need to define an object that represents some dom elements and call the library with it. Then, you can use it to decorate a class as shown below.
+Define an object that represents some dom elements, call the library with it, and then use it to decorate a class as shown below. Elements are attached to `$` of the class.
 
 ```javascript
 // part 1
-import dom from 'dom-inject'
+import inject from 'inject'
 
 const domElements = {
   heading: document.getElementById('heading'),
   footer: document.querySelector('footer')
 }
 
-export default dom(domElements)
+export default inject(domElements)
 ```
 
 ```javascript
@@ -38,4 +38,4 @@ class Hello {
 }
 ```
 
-To inject more elements than just `heading`, simply comma delimit i.e. `@dom('heading', 'footer')`. Or if you want access to all elements, just use `@dom` without any arguments.
+To inject more elements than just `heading`, simply comma delimit i.e. `@dom('heading', 'footer')`. Or if you want access to all elements, simply use `@dom` without any arguments. See `example/`.
