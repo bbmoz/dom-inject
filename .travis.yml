@@ -6,7 +6,6 @@ branches:
     - master
 before_script:
   - npm prune
-  - npm run build
 cache:
   directories:
     - node_modules
