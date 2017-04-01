@@ -1,6 +1,6 @@
 {
   "name": "inject-decorator",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Create decorators that can inject anything into your JS modules!",
   "main": "dist/inject-decorator.js",
   "files": [
