@@ -1,0 +1,10 @@
+{
+  "name": "example",
+  "version": "0.0.0",
+  "description": "example for inject-decorator",
+  "private": true,
+  "author": "Joe Lee (https://github.com/bbmoz)",
+  "dependencies": {
+    "inject-decorator": "^0.0.1"
+  }
+}

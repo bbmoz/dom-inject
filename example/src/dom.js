@@ -1,4 +1,4 @@
-import inject from './../../dist/inject-decorator'
+import inject from 'inject-decorator'
 
 const domElements = {
   heading: document.getElementById('heading'),

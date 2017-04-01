@@ -5,8 +5,6 @@
   "main": "dist/inject-decorator.js",
   "files": [
     "dist/",
-    "src/",
-    "example/",
     "README.md",
     "LICENSE"
   ],
