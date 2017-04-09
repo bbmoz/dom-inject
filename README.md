@@ -1,4 +1,6 @@
-# Inject Decorator [![npm version](https://badge.fury.io/js/inject-decorator.svg)](https://badge.fury.io/js/inject-decorator) [![Build Status](https://travis-ci.org/bbmoz/inject-decorator.svg)](https://travis-ci.org/bbmoz/inject-decorator)
+# Inject Decorator
+[![npm version](https://badge.fury.io/js/inject-decorator.svg)](https://badge.fury.io/js/inject-decorator)
+[![Build Status](https://travis-ci.org/bbmoz/inject-decorator.svg)](https://travis-ci.org/bbmoz/inject-decorator)
 
 > Create decorators that can inject anything into your JS modules!
 
